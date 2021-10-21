@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	background: #3636a3;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	height: 10vh;
+	text-align: center;
+	font-size: 80px;
+	color: white;
+	padding: 0;
+	margin-top: 50px;
+}
+
+.choix {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.choix img {
+	padding: 20px 20px 0 20px;
+	width: 100px;
+}
+
+#cursor {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#cache {
+	cursor: default;
+	text-decoration: none;
+	color: black;
+}
+
+.legende {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#valeur img {
+	width: 120px;
+}
+
+.logo {
+	background: white;
+    border-radius: 2em;
+    margin: 30px;
+}
+
+#piege:hover {
+animation : gradient 0.5s linear infinite;
+}
+
+@keyframes gradient { 
+  0% {
+    transform: translate(10px, 10px);
+  }
+  50% {
+    transform: translate(-8px, -15px);
+  }
+  75% {
+    transform: translate(15px, -5px);
+  }
+  100% {
+    transform: translate(10px, 10px);
+  }
+}
