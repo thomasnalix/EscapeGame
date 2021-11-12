@@ -37,7 +37,7 @@ img {
 #interrupteur {
 	position: absolute;
 	border: none;
-	background: black;
+	background: #00000033;
 	bottom: 0px;
 	right: 50%;
 	padding: 10px;
