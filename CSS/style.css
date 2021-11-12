@@ -1,74 +1,55 @@
 body {
 	margin: 0;
-	background: #3636a3;
 	font-family: 'Open Sans', sans-serif;
+	background: #020008;
+	color: white;
+}
+
+section {
+	width: 80%;
+	margin: auto;
 }
 
 h1 {
-	height: 10vh;
 	text-align: center;
-	font-size: 80px;
-	color: white;
-	padding: 0;
-	margin-top: 50px;
+	font-size: 40px;
 }
 
-.choix {
-	width: 100%;
+.sommaire p {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+.boxSommaire {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#inactif {
+	background: #3a3454;
+}
+
+.sommaire {
+	transition-duration: 0.5s;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	text-align: center;
+	background: linear-gradient(135deg, #47319f, #2c00dd);
+	width: 241px;
+	height: 200px;
+	border-radius: 30px;
+	margin: 20px;
+	font-size: 20px;
+	flex-direction: column;
 }
 
-.choix img {
-	padding: 20px 20px 0 20px;
-	width: 100px;
+.sommaire img {
+	width: 50px;
+	margin: auto;
 }
 
-#cursor {
-	cursor: pointer;
-	text-decoration: underline;
-}
-
-#cache {
-	cursor: default;
-	text-decoration: none;
-	color: black;
-}
-
-.legende {
-	display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-#valeur img {
-	width: 120px;
-}
-
-.logo {
-	background: white;
-    border-radius: 2em;
-    margin: 30px;
-}
-
-#piege:hover {
-animation : gradient 0.5s linear infinite;
-}
-
-@keyframes gradient { 
-  0% {
-    transform: translate(10px, 10px);
-  }
-  50% {
-    transform: translate(-8px, -15px);
-  }
-  75% {
-    transform: translate(15px, -5px);
-  }
-  100% {
-    transform: translate(10px, 10px);
-  }
+.sommaire:hover {
+	transition-duration: 0.5s;
+	transform: scale(1.125);
 }

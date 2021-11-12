@@ -1,0 +1,73 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: black;
+	transition-duration: 0.5s;
+	margin: 0;
+	text-align: center;
+}
+
+img {
+	position: absolute;
+    animation : bouge 5s linear infinite;
+}
+
+@keyframes bouge { 
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#lanterne {   
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#interrupteur {
+	position: absolute;
+	border: none;
+	background: black;
+	bottom: 0px;
+	right: 50%;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+#bouton {
+	transform: translate(50%,-50%);
+	position: absolute;
+	top: 30%;
+	right: 30%;
+	padding: 25px;
+	background: #020202;
+    border: none;
+    border-radius: 20px;
+}
+
+.zone {
+    position: absolute;
+    bottom: 20%;
+    width: 50%;
+    margin: auto;
+    transform: translate(50%,-50%);
+}
+
+ #cache a {
+ 	cursor: default;
+	text-decoration: none;
+	color: black;
+ }
+
+ #fake {
+ 	cursor: pointer;
+	text-decoration: underline;
+ }
