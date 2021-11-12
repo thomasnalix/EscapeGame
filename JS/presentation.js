@@ -15,7 +15,7 @@ function lanterne() {
     	document.getElementById("fond").style.backgroundColor="black";
   	}
   	temps -= 1;
-  	}, 50);
+  	}, 40);
 }
 
 function levier() {
