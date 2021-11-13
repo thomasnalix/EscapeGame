@@ -29,12 +29,25 @@ var value = 1;
 var hauteur = 1;
 var longueur = 1;
 
+/* Test en nuage de point pour la repartition de la cible sur la page*/
 function aim() {
-  value++;
-  hauteur = Math.random() * (screen.width - 400);
-  longueur = Math.random() * (screen.height - 400);
-  document.getElementById("aim").innerHTML = value;
+ 	for (boucle = 0; boucle < 5000; boucle++) {
+  		value++;
+  		hauteur = Math.random() * (window.innerHeight - 40);
+  		longueur = Math.random() * (window.innerWidth - 40);
+    	document.getElementById("aim").innerHTML = value;
+    	
+    	var btn = document.createElement("div");
+    	document.body.appendChild(btn);
+    	btn.style.padding = "5px";
+   		btn.style.backgroundColor = "#" + ((1<<24)*Math.random() | 0).toString(16);
+    	btn.style.borderRadius = "40px"; 
+	    btn.style.position = "absolute";
+		btn.style.top = hauteur + "px";
+		btn.style.left = longueur + "px";
 
-  document.getElementById("cible").style.top = hauteur + "px";
-  document.getElementById("cible").style.left = longueur + "px";
+		document.getElementById("cible").style.top = hauteur + "px";
+  		document.getElementById("cible").style.left = longueur + "px";
+	}
 }
+
