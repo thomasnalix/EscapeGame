@@ -19,7 +19,22 @@ function lanterne() {
 }
 
 function levier() {
+	document.getElementById("bouton").style.padding = "0px";
+	document.getElementById("bouton").style.backgroundColor="#ffea7b";
 	document.getElementById("fond").style.backgroundColor="#ffea7b";
 }
 
-/* Course */
+/* aim */
+var value = 1;
+var hauteur = 1;
+var longueur = 1;
+
+function aim() {
+  value++;
+  hauteur = Math.random() * (screen.width - 400);
+  longueur = Math.random() * (screen.height - 400);
+  document.getElementById("aim").innerHTML = value;
+
+  document.getElementById("cible").style.top = hauteur + "px";
+  document.getElementById("cible").style.left = longueur + "px";
+}
