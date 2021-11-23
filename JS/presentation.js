@@ -37,15 +37,6 @@ function aim() {
   		longueur = Math.random() * (window.innerWidth - 40);
     	document.getElementById("aim").innerHTML = value;
     	
-    	var btn = document.createElement("div");
-    	document.body.appendChild(btn);
-    	btn.style.padding = "5px";
-   		btn.style.backgroundColor = "#" + ((1<<24)*Math.random() | 0).toString(16);
-    	btn.style.borderRadius = "40px"; 
-	    btn.style.position = "absolute";
-		btn.style.top = hauteur + "px";
-		btn.style.left = longueur + "px";
-
 		document.getElementById("cible").style.top = hauteur + "px";
   		document.getElementById("cible").style.left = longueur + "px";
 	}

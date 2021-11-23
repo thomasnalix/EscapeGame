@@ -1,8 +1,12 @@
 body {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
-	background: #020008;
+
 	color: white;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../Ressources/Images/accueil.jpg");
 }
 
 section {
@@ -19,6 +23,11 @@ h1 {
 	color: white;
 	text-decoration: none;
 	text-align: center;
+	font-size: 25px;
+}
+
+a {
+	text-decoration: none;
 }
 
 .boxSommaire {
@@ -28,20 +37,24 @@ h1 {
 }
 
 #inactif {
-	background: #3a3454;
+	    background: #000000d1;
+    backdrop-filter: blur(21px);
 }
 
 .sommaire {
 	transition-duration: 0.5s;
 	display: flex;
+	border : solid 1px black;
 	justify-content: center;
-	background: linear-gradient(135deg, #47319f, #2c00dd);
-	width: 241px;
-	height: 200px;
+	    background: #00000000;
+    backdrop-filter: blur(21px);
+    width: 315px;
+    height: 307px; 
 	border-radius: 30px;
 	margin: 20px;
 	font-size: 20px;
 	flex-direction: column;
+	justify-content: flex-start;
 }
 
 .sommaire img {
