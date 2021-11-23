@@ -1,18 +1,67 @@
 body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-  background : #ffffff;
+  background: #000219;
+  color: white;
+  user-select : none;
 }
 
 #cible {
   position: absolute;
   width: 50px;
+  display: none;
+  z-index: 99;
 }
 
 #aim {
-  background : rgb(109, 109, 109);
-  border-radius: 30px;
-  width:45px;
-  padding:3px;
-  margin : 0;
+  padding: 3px;
+  margin: 0;
   text-align: center;
+  left: 50%;
+  bottom: 50%;
+  font-size: 500px;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  color: #000433;
+  display: none;
+}
+
+#jouer {
+  padding: 20px 100px;
+  background: #14f3a5;
+  color: white;
+  border-radius: 40px;
+  font-size: 25px;
+  text-align: center;
+  border : none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: 10%;
+  transition-duration: 0.5s;
+}
+
+#jouer:hover {
+  box-shadow: 0px -1px 20px 0px #14f3d9;
+  transition-duration: 0.5s;
+}
+
+#timer {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+#result {
+  display: none;
+  color: black;
+  width: 380px;
+  height: 435px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  background: #ffffff;
 }

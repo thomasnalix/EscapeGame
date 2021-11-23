@@ -1,12 +1,8 @@
 body {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
-
+	background: #030019;
 	color: white;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("../Ressources/Images/accueil.jpg");
 }
 
 section {
@@ -37,17 +33,13 @@ a {
 }
 
 #inactif {
-	    background: #000000d1;
-    backdrop-filter: blur(21px);
+	background: #010005;
 }
 
 .sommaire {
 	transition-duration: 0.5s;
 	display: flex;
-	border : solid 1px black;
-	justify-content: center;
-	    background: #00000000;
-    backdrop-filter: blur(21px);
+	background: #3523b7;
     width: 315px;
     height: 307px; 
 	border-radius: 30px;
