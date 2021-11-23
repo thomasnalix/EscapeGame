@@ -65,3 +65,11 @@ body {
   text-align: center;
   background: #ffffff;
 }
+
+ #aide {
+  bottom: 2px;
+  right: 2px;
+  margin: 5px;
+  position: absolute;
+  width: 50px;
+ }

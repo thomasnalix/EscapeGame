@@ -40,14 +40,13 @@ function aim() {
   	hauteur = Math.random() * (window.innerHeight - 50);
   	longueur = Math.random() * (window.innerWidth - 50);
     document.getElementById("aim").innerHTML = value;
-    	
 	document.getElementById("cible").style.top = hauteur + "px";
   	document.getElementById("cible").style.left = longueur + "px";
 }
 
 /* Fonction du timer */
 function jouer() {
-	var count=10;
+	var count=15;
 	var gagner = false;
 	document.getElementById("cible").style.display = "block";
 	document.getElementById("aim").style.display = "block";
@@ -55,19 +54,17 @@ function jouer() {
 	document.getElementById("cible").style.display = "block";
 	document.getElementById("jouer").style.display = "none";
 	function timer() {
-		count=count-1;
+		count--;
 		if (count < 0) {
 		    clearInterval(counter);
 		    return;
 		}
 		document.getElementById("timer").innerHTML=count + " secondes";
-		gagner = value > 12;
+		gagner = value => 18;
 		if (gagner && count==0) {
-	    	document.getElementById("result").innerHTML = "oui";
 	    	document.getElementById("cible").style.display = "none";
 	    	document.getElementById("result").style.display = "block";
 		} else if (!gagner && count==0){
-			document.getElementById("result").innerHTML = "non";
 			document.getElementById("jouer").style.display = "block";
 			document.getElementById("cible").style.display = "none";
 			document.getElementById("aim").style.display = "none";
