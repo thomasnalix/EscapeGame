@@ -1,0 +1,40 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: black;
+	margin: 0;
+	user-select : none; 
+}
+
+
+.aTrouver {
+	padding: 75px;
+	background: red;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	border-radius: 50px;
+}
+
+.rond {
+	border-radius: 250px;
+	padding: 175px;
+	background: purple;
+	margin: 50px;
+}
+
+.content {
+	  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+ #aide {
+  bottom: 2px;
+  right: 2px;
+  margin: 5px;
+  position: absolute;
+  width: 50px;
+ }
