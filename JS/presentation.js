@@ -60,7 +60,7 @@ function jouer() {
 		    return;
 		}
 		document.getElementById("timer").innerHTML=count + " secondes";
-		gagner = value => 18;
+		gagner = value > 17;
 		if (gagner && count==0) {
 	    	document.getElementById("cible").style.display = "none";
 	    	document.getElementById("result").style.display = "block";
