@@ -81,10 +81,11 @@ var couleurs = ['#560256', '#700370', '#860286', '#a006a0', '#540254', '#640364'
 var aleat = Math.floor(Math.random() * 6);
 var aTrouver = couleur = couleurs[aleat];
 function select(nom) {
-	document.getElementById('abc').style.backgroundColor=aTrouver;
+	document.getElementById('titre').style.display = "none";
+	document.getElementById('abc').style.backgroundColor = aTrouver;
 	var index = Math.floor(Math.random() * 6);
 	var couleur = couleurs[index];
-    document.getElementById(nom).style.backgroundColor=couleur;
+    document.getElementById(nom).style.backgroundColor = couleur;
     var rond1 = document.getElementById('1').style.backgroundColor;
     var rond2 = document.getElementById('2').style.backgroundColor;
     var rond3 = document.getElementById('3').style.backgroundColor;
@@ -92,6 +93,8 @@ function select(nom) {
     var Trouver = document.getElementById('abc').style.backgroundColor;
     if (rond1 == Trouver && rond2 == Trouver && rond3 == Trouver && rond4 == Trouver) {
     	document.getElementById('abc').style.backgroundColor='green';
+    	document.getElementById('titre').innerHTML="Bien joué !";
+    	document.getElementById('titre').style.display="block";
     } else {
     }
 }
