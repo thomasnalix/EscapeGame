@@ -73,6 +73,10 @@ function jouer() {
 	}
 }
 
+/* =======================================*/
+/*                COULEUR                 */
+/* =======================================*/
+
 var couleurs = ['#560256', '#700370', '#860286', '#a006a0', '#540254', '#640364', '#ab0eab'];
 var aleat = Math.floor(Math.random() * 6);
 var aTrouver = couleur = couleurs[aleat];
