@@ -95,6 +95,8 @@ function select(nom) {
     	document.getElementById('abc').style.backgroundColor='green';
     	document.getElementById('titre').innerHTML="Bien joué !";
     	document.getElementById('titre').style.display="block";
+    	document.getElementById('info').style.display="block";
     } else {
+    	document.getElementById('info').style.display="none";
     }
 }

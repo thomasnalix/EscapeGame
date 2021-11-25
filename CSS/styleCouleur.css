@@ -1,6 +1,6 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	background: black;
+	background: #0b000d;
 	margin: 0;
 	user-select : none; 
 }
@@ -16,18 +16,18 @@ body {
 
 .rond {
 	border-radius: 250px;
-	padding: 175px;
+	padding: 127px;
 	background: purple;
 	margin: 50px;
 }
 
 .content {
-	display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
  #aide {
@@ -42,6 +42,23 @@ body {
 	position: absolute;
 	color: white;
 	font-size: 40px;
-	transform: translate(-50%, 50%);
+	transform: translate(-50%, 0%);
 	left: 50%;
+	background: #4b004b;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#info {
+background: #4b004b;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    display: none;
+    padding: 20px;
+    border-radius: 20px;
 }
