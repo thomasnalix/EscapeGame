@@ -60,7 +60,7 @@ function jouer() {
 		    return;
 		}
 		document.getElementById("timer").innerHTML=count + " secondes";
-		gagner = value > 17;
+		gagner = value > 16;
 		if (gagner && count==0) {
 	    	document.getElementById("cible").style.display = "none";
 	    	document.getElementById("result").style.display = "block";
@@ -99,4 +99,24 @@ function select(nom) {
     } else {
     	document.getElementById('info').style.display="none";
     }
+}
+
+/* =======================================*/
+/*                 BOUTON                 */
+/* =======================================*/
+
+
+function inverse() {
+	document.getElementById('info').style.display="block";
+}
+
+var bValue = 0;
+var bHauteur = 1;
+var bLongueur = 1;
+function faux() {
+	bValue++;
+  	bHauteur = Math.random() * (window.innerHeight - 50);
+  	bLongueur = Math.random() * (window.innerWidth - 50);
+	document.getElementById("faux").style.top = bHauteur + "px";
+  	document.getElementById("faux").style.left = bLongueur + "px";
 }
