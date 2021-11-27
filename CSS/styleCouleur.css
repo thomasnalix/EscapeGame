@@ -17,7 +17,7 @@ body {
 .rond {
 	border-radius: 250px;
 	padding: 127px;
-	background: purple;
+	background: red;
 	margin: 50px;
 }
 
@@ -44,13 +44,13 @@ body {
 	font-size: 40px;
 	transform: translate(-50%, 0%);
 	left: 50%;
-	background: #4b004b;
+	background: #be1111;
   padding: 20px;
   border-radius: 20px;
 }
 
 #info {
-	background: #4b004b;
+	background: #a11919;
   transform: translate(-50%, -50%);
   font-size: 20px;
   text-align: center;
@@ -68,5 +68,5 @@ body {
  #cache {
   cursor: default;
   text-decoration: none;
-  color: black;
+  color: white;
  }

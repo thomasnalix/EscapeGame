@@ -77,7 +77,7 @@ function jouer() {
 /*                COULEUR                 */
 /* =======================================*/
 
-var couleurs = ['#560256', '#700370', '#860286', '#a006a0', '#540254', '#640364', '#ab0eab'];
+var couleurs = ['#d00202', '#b41111', '#981111', '#700b0b', '#4c0c0c', '#da0202','#9a1010'];
 var aleat = Math.floor(Math.random() * 6);
 var aTrouver = couleur = couleurs[aleat];
 function select(nom) {
