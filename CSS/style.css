@@ -20,6 +20,7 @@ h1 {
 	text-decoration: none;
 	text-align: center;
 	font-size: 25px;
+	z-index: 1;
 }
 
 a {
@@ -49,12 +50,18 @@ a {
 	justify-content: flex-start;
 }
 
-.sommaire img {
-	width: 50px;
-	margin: auto;
+.cadenas {
+    width: 100px;
+    z-index: 1;
+    margin: auto;
 }
 
 .sommaire:hover {
 	transition-duration: 0.5s;
 	transform: scale(1.125);
+}
+
+.chaine {
+	position: absolute;
+	width: 	312px;
 }

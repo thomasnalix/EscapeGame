@@ -60,7 +60,7 @@ function jouer() {
 		    return;
 		}
 		document.getElementById("timer").innerHTML=count + " secondes";
-		gagner = value > 16;
+		gagner = value > 14;
 		if (gagner && count==0) {
 	    	document.getElementById("cible").style.display = "none";
 	    	document.getElementById("result").style.display = "block";
@@ -115,8 +115,8 @@ var bHauteur = 1;
 var bLongueur = 1;
 function faux() {
 	bValue++;
-  	bHauteur = Math.random() * (window.innerHeight - 50);
-  	bLongueur = Math.random() * (window.innerWidth - 50);
+  	bHauteur = Math.random() * (window.innerHeight - 78);
+  	bLongueur = Math.random() * (window.innerWidth - 271);
 	document.getElementById("faux").style.top = bHauteur + "px";
   	document.getElementById("faux").style.left = bLongueur + "px";
 }
